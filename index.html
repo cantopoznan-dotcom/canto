@@ -280,7 +280,7 @@
         <div><span>Miejsce</span><p>Poznań – Marcelin<br>ul. Świerzawska 14</p></div>
         <div><span>Godziny lekcji</span><p>Pon – Pt: 13:00 – 20:00<br>Sob: 10:00 – 18:00</p></div>
       </div>
-      <!-- Formularz wysyłany przez Web3Forms. Wklej swój klucz w miejsce WSTAW_TUTAJ_KLUCZ_WEB3FORMS -->
+      <!-- Formularz wysyłany przez Web3Forms -->
       <form id="form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="eda828f5-b368-4ecf-9d50-e5444c8b91ff">
         <input type="hidden" name="subject" value="Nowe zgłoszenie ze strony Canto">
@@ -317,7 +317,7 @@
   document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault();
     var form=this, msg=document.getElementById('form-msg'), btn=document.getElementById('form-btn');
-    if(form.access_key.value.indexOf('eda828f5-b368-4ecf-9d50-e5444c8b91ff')===0){
+    if(form.access_key.value.indexOf('WSTAW')===0){
       msg.textContent='Formularz nie jest jeszcze podłączony. Zadzwoń: 692 427 492 lub napisz: cantopoznan@gmail.com';
       return;
     }
